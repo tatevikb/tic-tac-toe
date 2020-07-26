@@ -1,6 +1,9 @@
 public class Board {
     private char[][] cells = null;
 
+    /**
+     * Initialization of cells from given string.
+     */
     public Board(String input)
     {
         cells = new char[3][3];
@@ -15,6 +18,9 @@ public class Board {
         cells[2][2] = input.charAt(8);
     }
 
+    /**
+     * Prints board.
+     */
     public void print()
     {
         System.out.println("---------");
